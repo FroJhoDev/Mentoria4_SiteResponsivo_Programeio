@@ -1,13 +1,13 @@
 const mainContent = document.querySelector(".main-contente")
 
-const coffees = [
+const posts = [
   { title: "Avatar: O Caminho da Água", image: "assets/images/movie01.jpeg" },
   { title: "Resgate 2", image: "assets/images/movie02.jpg" },
 ]
 
 const listPosts = () => {
     let output = ""
-    coffees.forEach(
+    posts.forEach(
       ({ title, image }) =>
         (output += `
                 <article>
