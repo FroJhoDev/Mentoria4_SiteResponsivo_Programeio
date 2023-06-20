@@ -4,82 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
     <title>Programe.io - Meu Site HTML</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-
-        header {
-            padding: 60px;
-            text-align: center;
-            background-color: orange;
-            color: #ffffff;
-        }
-
-        nav {
-            display: flex;
-            background-color: #333333;
-        }
-
-        nav a {
-            color: #ffffff;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        nav a:hover {
-            background-color: #dddddd;
-            color: #000000;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        aside {
-            flex: 30%;
-            background-color: #f1f1f1;
-            padding: 20px;
-        }
-
-        main {
-            flex: 70%;
-            background-color: white;
-            padding: 20px;
-        }
-
-        .fakeimg {
-            background-color: #aaaaaa;
-            width: 100%;
-            padding: 20px;
-            margin-bottom: 10px;
-        }
-        
-        footer {
-            padding: 30px;
-            text-align: center;
-            background-color: #100e17;
-            color: #ffffff;
-        }
-
-        /* Cria uma condição, se o tamanho disponivel for menor que 700px execulta o CSS informado*/
-        @media screen and (max-width: 700px) {
-            nav {
-                flex-direction: column;
-            }
-            .row {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Tag de cabeçalho -->
@@ -115,31 +52,16 @@
         </aside>
 
         <!-- Tag que indica o principal conteudo da pagina -->
-        <main>
-
-            <!-- Tag que marca um artigo ou postagem -->
-            <article>
-                <h2>TITULO DA POSTAGEM</h2>
-                <h5>Jonathan, Jun 22, 2023</h5>
-                <div class="fakeimg">Imagem</div>
-                <p>Algum texto...</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            </article>
-
-            <article>
-                <h2>TITULO HEADING 2</h2>
-                <h5>Jonathan, Dec 7, 2017</h5>
-                <div class="fakeimg">Imagem</div>
-                <p>Algum texto...</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            </article>
+        <main class="main-contente">
+            <!-- Traz aqui dentro a lista de filmes do arquivo app.js função listPosts() -->
         </main>
     </div>
 
     <!-- Define o rodape da pagina -->
     <footer>
-        <h2>Footer</h2>
+        <h2>Copyright© Todos os direitos reservados - 2023</h2>
     </footer>
-    
+
+    <script src="app.js"></script>
 </body>
 </html>

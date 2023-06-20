@@ -1,0 +1,15 @@
+{
+    "name": "MoviesIO",
+    "short_name": "MoviesIO",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#fdfdfd",
+    "theme_color": "#ffa500",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/asssets/icons/icon.png",
+        "type": "image/png", "sizes": "50x50"
+      }
+    ]
+  }
